@@ -1,0 +1,9 @@
+*.cmd
+.vscode/
+*symvers
+*.order
+*.ko
+*.mod
+*.mod.c
+*.o
+inputattach-pandora

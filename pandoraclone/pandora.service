@@ -1,0 +1,11 @@
+[Unit]
+Description=Enables PandoraClone input control driver
+After=sys-devices-c81004c0.serial-tty-ttyS0.device storage.mount
+Wants=sys-devices-c81004c0.serial-tty-ttyS0.device storage.mount
+
+[Service]
+Type=forking
+ExecStart=/storage/pandoraclone/run.sh
+
+[Install]
+WantedBy=multi-user.target
